@@ -42,3 +42,104 @@ nav {
     right: 0;
     margin: auto;
 }
+
+
+nav ul h2 {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+}
+
+#outnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+
+#innav {
+    display: inline-flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0;
+    font-size: 0.75em;
+    width: auto;
+}
+
+.navbar-socials {
+    list-style: none;
+    display: flex;
+    
+}
+
+
+.web-pages-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+}
+
+
+.more-dropdown-list{
+    cursor: pointer;
+    color: #000000;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 5px #44444433;
+    z-index: 2;
+    border-radius: 0;
+    padding-top: 5px;
+}
+
+
+
+.content-container{
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    height: 100%;
+}
+
+br {
+    color: black;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed; 
+    bottom: 0;
+}
+
+.copyright-info{
+    text-align: left;
+    color: #7e7e7e;
+    position: absolute;   
+    margin-left: 25%;
+    justify-content: bottom;
+    margin-top: 15px;
+}
+
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    display: flex;
+    margin-left: 170px;
+    position: inherit;
+    padding: 0px 0px 0px;
+}
+
