@@ -1,38 +1,53 @@
-<!-- This is the main page and will have the basic strucutre that one should expect all through in all other pages -->
 <!DOCTYPE html>
-</html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Gichuru</title>
+    <link rel="shortcut icon" type="image/png" href="/Structure/Assets/BlueWhiteMinimalistArtificialIntelligenceLogo(16px).png">
+
     <link rel="stylesheet" href="/Design/Main Design/main.css">
-    <script src="/Automation/Main Automation/main.js" defer></script>
 
 </head>
 <body>
+    <!-- This is the main page and will have the basic strucutre that one should expect all through in all other pages -->
     <!--//# Note-> I will structure the code slightly similar to my folder and file arrangement, this will allow me to easily remember where different peieces of code/assets are-->
-    <header>
-
-    </header>
-    <div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/About/index.html">About</a></li>
-                <li><a href="/Projects/index.html">Projects</a></li>
-                <li><a href="/Contact/index.html">Contact</a></li>
+    <!-- I also have a domain under my name purchased so once complete I will formally put it under that domain priority not too high-->
+<header class="box">
+</header>
+<nav> <!--//# Came up with a navbar to hold all the links to other pages of my website-->
+    <ul class="web-pages-list" id="outnav">
+        <li><a href="index.html"><h2>RYAN GICHURU</h2></a></li>
+        <li>
+            <ul class="web-pages-list" id="innav">
+                <li><a href="NavigationBar/about.html">ABOUT</a></li>
+                <li><a href="NavigationBar/portfolio.html">PORTFOLIO</a></li>
+                <li><a href="NavigationBar/blog.html">BLOG</a></li>
+                <li><a href="NavigationBar/contact.html">CONTACT</a></li>
+                <li class="more-dropdown-list">MORE <!--//# I enclosed these pages here because I will later remove them as I improve my website and make it more industry standard-->
+                    <div class="dropdown-content">
+                        <a href="/Structure/NavigationBar/More/sitereport.html">SITE REPORT</a>
+                        <a href="/Structure/NavigationBar/More/videoDemo.html">VIDEO DEMO</a>
+                    </div>
+                </li>
             </ul>
-        </nav>
+            
+            </ul>
+        </li>
+    </ul>
+</nav>
+<main>
+    <div class="content-container">
+
     </div>
-    <main>
-        <section>
-            <h1>Home</h1>
-            <p>Welcome to my website</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Ryan Gichuru</p>
+</main>
+<footer> <!--//# Basic footer seen on most websites-->
+    <br>
+    <div class="copyright-info">
+        <p>Copyright &copy; 2024 Ryan Gichuru. All rights reserved</p>
+    </div>
+
+</footer>
 </body>
 </html>
 
