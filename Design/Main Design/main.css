@@ -66,7 +66,25 @@ nav ul h2 {
     color: #000000; 
 }
 
+#outnav li:first-child a {
+    padding: 40px 15px;
+    text-decoration: none;
+    color: #000000;
+}
 
+#outnav li, #innav li {
+    margin: 0;
+}
+
+#outnav li a, #innav li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#outnav li a:hover, #innav li a:hover {
+    color: #d2d2d2;
+}
 
 #innav {
     display: inline-flex;
@@ -81,6 +99,22 @@ nav ul h2 {
     list-style: none;
     display: flex;
     
+}
+
+.navbar-socials .fa-brands {
+    color: #000000;
+    size: 0.5em;
+    transition: color 0.3s ease;
+}
+
+
+.navbar-socials .fa-brands:hover {
+    color: #d2d2d2;
+    transform: scale(1.3);
+}
+
+#innav li a {
+    padding: 5px 10px;
 }
 
 .web-pages-list {
@@ -105,12 +139,24 @@ nav ul h2 {
     padding: 0.5em 1rem;
 }
 
-
+.my-web-pages-list li a:hover {
+    color: #d2d2d2;
+}
 .more-dropdown-list{
     cursor: pointer;
     color: #000000;
 }
+.more-dropdown-list:hover{
+    color: #d2d2d2;
+}
 
+.more-dropdown-list:hover .dropdown-content {
+    color: #d2d2d2;
+    display: block;
+    position: absolute;
+    top: 2em; 
+    left: 0;
+}
 
 .dropdown-content {
     display: none;
@@ -132,7 +178,10 @@ nav ul h2 {
     transition: color 0.3s;
 }
 
-
+.dropdown-content a:hover {
+    background-color: #f9f9f9; 
+    color: #d2d2d2;
+}
 
 .content-container{
     background-color: rgb(0, 0, 0);
@@ -153,7 +202,13 @@ nav ul h2 {
         padding: 1rem;
     }
 
+    #outnav li:first-child {
+        min-width: 0;
+    }
 
+    #outnav li:first-child a {
+        font-size: smaller;
+    }
 
     #outnav li a {
         font-size: smaller;
@@ -167,7 +222,7 @@ nav ul h2 {
         padding: 0;
     }
 
-    .web-pages-list li {
+    .my-web-pages-list li {
         text-align: center; 
     }
 
@@ -222,6 +277,15 @@ transition: color 0.3s ease;
 
 }
 
+.footer-socials .fa-brands:hover {
+    color: #d2d2d2;
+    transform: scale(1.3);
+}
+
+.footer .fa-brands:hover {
+    color: #d2d2d2;
+    transform: scale(1.3);
+}
 
 .location p{
     text-align: right;
