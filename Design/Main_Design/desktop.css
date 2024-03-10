@@ -12,57 +12,104 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    padding-bottom: 4rem; /* This will add space for the fixed footer */
+    padding-bottom: 4rem;
 }
 
 header {
     position: sticky;
-    top: 0;
     background-color: #000000;
     color: #ffffff;
     padding: 1rem 0;
     text-align: center;
 }
 
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
 nav {
+    position: relative;
+    top: 0;
     width: 70%;
-    margin: auto;
     background-color: #ffffff;
+    margin: auto;
     z-index: 10;
 }
 
-#outnav, #innav, .navbar-socials {
-    list-style: none;
-    padding: 0;
+nav ul h2 {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+#outnav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
 }
 
-#outnav li, #innav li {
-    padding: 10px; /* Adjust padding as needed */
-}
-
-#outnav li a, #innav li a, .navbar-socials li a {
+#outnav li a {
     text-decoration: none;
     color: #000000;
     white-space: nowrap;
 }
 
-#outnav li a:hover, #innav li a:hover, .navbar-socials li a:hover {
+.home-button {
+    padding: 40px 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.home-button h2:hover {
     color: #d2d2d2;
 }
 
-.navbar-socials li {
-    margin: 0 5px;
+#outnav li a:hover, #innav li a:hover {
+    color: #d2d2d2;
 }
 
-.fa-brands {
+#innav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-left: 400px;
+    width: auto;
+    position: fixed;
+}
+
+.innav-text {
+    padding: 40px 10px;
+    font-size: 0.65em;
+}
+
+.web-pages-list > li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-socials {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-socials .fa-brands {
     color: #000000;
+    font-size: 0.5em; /* Updated from 'size' to 'font-size' */
     transition: color 0.3s ease;
 }
 
-.fa-brands:hover {
+.navbar-socials .fa-brands:hover {
     color: #d2d2d2;
     transform: scale(1.3);
 }
@@ -70,22 +117,30 @@ nav {
 .more-dropdown-list {
     cursor: pointer;
     color: #000000;
-    position: relative; /* Position relative to allow absolute positioning of dropdown content */
+}
+
+.more-dropdown-list:hover {
+    color: #d2d2d2;
+    transition: 0.3s ease;
+}
+
+.more-dropdown-list:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    color: #d2d2d2;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%; /* Align dropdown directly below the 'MORE' link */
-    left: 0;
     background-color: #f9f9f9;
+    min-width: 160px;
     box-shadow: 0 2px 5px #44444433;
     z-index: 2;
-    min-width: 160px; /* Set a minimum width for the dropdown */
-}
-
-.more-dropdown-list:hover .dropdown-content {
-    display: block;
+    border-radius: 0;
+    padding-top: 5px;
 }
 
 .dropdown-content a {
@@ -94,6 +149,7 @@ nav {
     text-decoration: none;
     display: block;
     white-space: nowrap;
+    transition: color 0.3s;
 }
 
 .dropdown-content a:hover {
@@ -104,7 +160,7 @@ nav {
 .content-container {
     background-color: rgb(0, 0, 0);
     width: 70%;
-    flex-grow: 1; /* Ensure container takes up remaining space */
+    height: 100%;
 }
 
 footer {
@@ -119,10 +175,10 @@ footer {
 
 footer ul {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center; /* Center footer content */
+    justify-content: center;
     gap: 1rem;
+    padding: 0;
 }
 
 footer li a {
@@ -131,28 +187,38 @@ footer li a {
 }
 
 .location {
-    text-align: center; /* Center the location text */
-    margin-top: 1rem; /* Add space above the location */
+    text-align: center;
 }
-
-@media (max-width: 800px) {
-    nav {
-        width: 100%; /* Full width on smaller screens */
-    }
-
-    #innav, .navbar-socials {
-        flex-direction: column;
-        align-items: flex-start; /* Align links to the start on smaller screens */
-    }
-
-    #innav {
-        margin-left: 0; /* Remove left margin on smaller screens */
-    }
-}
-
 
 .country-location img {
     margin-right: 0.5rem;
     width: 17px; 
+ }
+
+@media (max-width: 600px) {
+    nav {
+        width: 100%;
     }
     
+    #outnav, #innav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    #outnav li:first-child, #outnav li a {
+        font-size: smaller;
+    }
+    
+    #innav {
+        margin-left: 0;
+        position: static;
+    }
+
+    .content-container {
+        width: 100%;
+    }
+
+    footer {
+        position: static;
+    }
+}
