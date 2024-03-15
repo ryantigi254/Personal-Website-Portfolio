@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/Design/Main_Design/desktop.css">
     <link rel="stylesheet" href="/Design/Navigation_Bar/about.css">
     <script src="/Automation/Main_Automation/main.js" defer></script>
+    <script src="/Automation/Navigation_Bar/about.js" defer></script>
     <script src="https://kit.fontawesome.com/c4e363c4e7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -37,16 +38,16 @@
             </ul>
             <div class="web-pages-list">
                 <ul id="innav">
-                    <li><a href="#" class="innav-text">ABOUT</a></li>
-                    <li><a href="/Structure/Navigation_Bar_/portfolio.html" class="innav-text">PORTFOLIO</a></li>
-                    <li><a href="Navigation_Bar_/blog.html" class="innav-text">BLOG</a></li>
-                    <li><a href="Navigation_Bar_/contact.html" class="innav-text">CONTACT</a></li>
+                    <li><a href="#" class="innav-text" target="_blank">ABOUT</a></li>
+                    <li><a href="/Structure/Navigation_Bar_/portfolio.html" class="innav-text" target="_blank">PORTFOLIO</a></li>
+                    <li><a href="Navigation_Bar_/blog.html" class="innav-text" target="_blank">BLOG</a></li>
+                    <li><a href="Navigation_Bar_/contact.html" class="innav-text" target="_blank">CONTACT</a></li>
                     <li class="more-dropdown-list">
                         <a class="dropdown-toggle">MORE</a>
                         <!--//# I enclosed these pages here because I will later remove them as I improve my website and make it more industry standard-->
                         <div class="dropdown-content">
-                            <a href="/Structure/Navigation_Bar_/More/videoDemo.html">VIDEO DEMO</a>
-                            <a href="/Structure/Navigation_Bar_/More/sitereport.html">SITE REPORT</a>
+                            <a href="/Structure/Navigation_Bar_/More/videoDemo.html" target="_blank">VIDEO DEMO</a>
+                            <a href="/Structure/Navigation_Bar_/More/sitereport.html" target="_blank">SITE REPORT</a>
                         </div>
                     </li>
                 </ul>
@@ -55,13 +56,12 @@
                 <!--//#This are my social-media links  aiming to mimic my inspiration from "https://johnpham.co.uk/" -->
                 <ul class="navbar-socials">
                     <li>
-                        <a href="https://github.com/ryantigi254"><i class="fa-brands fa-github"></i></a>
-                    </li>
+                        <a href="https://github.com/ryantigi254" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <li>
-                        <a href="https://www.linkedin.com/in/ryan-gichuru-3a3b3b1b3/"><i
+                        <a href="https://www.linkedin.com/in/ryan-gichuru-3a3b3b1b3/" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
                     <li>
-                        <a href="https://www.kaggle.com/ryanmutiga"><i class="fa-brands fa-kaggle"></i></a>
+                        <a href="https://www.kaggle.com/ryanmutiga" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
                     </li>
                 </ul>
             </div>
@@ -146,21 +146,12 @@
                                 <img src="/Structure/Assets/Python.jpg" alt="My Skills Image">
                             </a>
                         </div>
-                        <!-- <div class="project-details">
-                            <div class="project-info">
-                                <h3>Student Researcher, AI for Independent Learning and AI-Assisted Learning Revision
-                                    (Urban Project)</h3>
-                                <p class="project-period">January 2024 – Present</p>
-                                <ul class="project-description">
-                                    <li>Leading the Urban Project to pioneer AI-assisted learning solutions, overseeing
-                                        data collection, analysis, and communication with stakeholders.</li>
-                                    <li>Spearheading the development of a chatbot intended to enhance learning
-                                        efficiency and engagement.</li>
-                                </ul>
-                            </div>
-                        </div> -->
+                        <a href="https://github.com/ryantigi254?tab=repositories" target="_blank" class="button-55">
+                            VIEW PROJECTS ON GITHUB<i class="fas fa-download"></i>
+                        </a>
                     </div>
                 </section>
+    
             </div>
 
 
@@ -183,7 +174,8 @@
                         <div class="education-details">
                             <h3>University of Northampton</h3>
                             <p class="education-qualification">Artificial Intelligence and Data Science BSc(Hons)</p>
-                            <p>Exploring complex AI concepts, with top grades in Problem Solving and Programming and Software Engineering Fundamentals. Actively engaged in research projects enhancing AI literacy and application.</p>
+                            <p>Exploring complex AI concepts, with top grades in Problem Solving and Programming and Software Engineering Fundamentals.</p>
+                            <p> Actively engaged in research projects enhancing AI literacy and application.</p>
                         </div>
                         <p class="education-period">September 2023 – Present</p>
                     </div>
@@ -285,23 +277,26 @@
                 <section class="cv-section">
                     <h2>CURRICULUM VITAE</h2>
                     <p>Download Ryan's CV below to find out more</p>
-                    <button class="button-54" onclick="location.href='URL_to_CV.pdf'" type="button">
+                    <a id="cv-link" href="/Structure/Assets/Documents/Ryan%20M.%20Gichuru%20%20Resume'.pdf" download="Ryan_M_Gichuru_Resume"></a>
+                    <button class="button-54" type="button" onclick="downloadCV()">
                         DOWNLOAD CV <i class="fas fa-download"></i>
                     </button>
                 </section>
             </div>
+            <!-- For the javascript part I consulted CHATGPT(https://chat.openai.com/) and  geeksforgeeks(https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/)-->
+
     
         
-        
+        </div>
     </main>
     <footer class="footer-container"> <!--//# Basic footer seen on most websites-->
 
         <div>
-            <ul class="footer-socials" id="footer-social-links">
-                <li><a href="https://github.com/ryantigi254"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/ryan-gichuru-3a3b3b1b3/"><i
+            <ul class="footer-socials" id="footer-social-links" target="_blank">
+                <li><a href="https://github.com/ryantigi254" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ryan-gichuru-3a3b3b1b3/" target="_blank"><i
                             class="fa-brands fa-linkedin"></i></a>
-                <li><a href="https://www.kaggle.com/ryanmutiga"><i class="fa-brands fa-kaggle"></i></a></li>
+                <li><a href="https://www.kaggle.com/ryanmutiga" target="_blank"><i class="fa-brands fa-kaggle"></i></a></li>
             </ul>
         </div>
         <div class="footer-details">
