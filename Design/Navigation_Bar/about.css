@@ -1,358 +1,372 @@
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
-.content-container {
-  background-color: #ffffff;
-  max-width: 68%;
-  width: 68%;
-  margin: 0 auto;
-  padding: 2rem 1%;
-  font-family: Geneva, Tahoma, sans-serif;
-  color: #000000;
+.University-details,.co-curricular-details,.education-details {
+  flex:1;
+  flex-grow:1;
+  padding-left:1rem;
+}
+
+.University-logo,.co-curricular-image,.education-logo {
+  flex:0 0 auto;
+}
+
+.University-qualification {
+  font-size:.9rem;
+  margin-bottom:.5rem;
 }
 
 .button-54 {
-  padding: 10px 30px; /* Changed from 25px to a value between v1 and v2 */
+  padding: 10px 35px;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: #808080; /* Intermediate color between black and the light grey of v2 */
-  border: 2px solid #fff;
-  border-radius: 5px; /* Reduced radius from v1 for progression towards the sharp edges of v2 */
-  box-shadow: 0 8px #999; /* Intermediate shadow between v1 and v2 */
+  color: #000000;
+  background-color: #f9f9f9;
+  border: 2px solid #000000;
+  border-radius: 0;
+  box-shadow: 0 6px #999;
   display: block;
   margin: 1rem auto;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
 }
 
 .button-54:hover {
-  background-color: #505050; /* Darker grey for intermediate hover state */
-  color: #fff; /* Keep text white on hover */
+  background-color: #000000;
+  box-shadow: 0 6px #666;
+  color: #fff;
+  transform: translateY(-3px);
 }
 
 .button-54:active {
-  background-color: #ffffff;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  background-color: #fff;
+  box-shadow: 0 6px #333;
+  transform: translateY(2px);
 }
 
-h2 {
-  text-align: center;
-  color: #000000;
-  font-weight: bolder;
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
+.co-curricular-container,.collaboration-container,.cv-container,.education-container,.experience-container,.project-container,.skills-container {
+  width:100%;
 }
 
-.project-entry,.collaboration-entry {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 2rem;
-  background: #ffffff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.co-curricular-content {
+  flex-grow:1;
 }
 
-.project-details,.collaboration-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: calc(100% - 70px);
+.co-curricular-details .co-curricular-period,.education-details .education-qualification {
+  color:#000;
+  display:block;
+  font-size:.9rem;
+  font-style:italic;
+  margin-bottom:.5rem;
 }
 
-.project-info,.collaboration-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.co-curricular-details h3,.education-details h3 {
+  color:#333;
+  font-size:1.2rem;
+  font-weight:700;
+  margin-bottom:.5rem;
 }
 
-.project-role,.project-period,.project-description,.collaboration-role,.collaboration-period,.collaboration-description {
-  margin-bottom: 0.5rem;
+.co-curricular-details p,.education-details p {
+  color:#000;
+  font-size:.9rem;
+  line-height:1.4;
+  margin-bottom:.5rem;
 }
 
-.project-logo img,.collaboration-logo img {
-  width: 50px;
-  height: auto;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-}
-
-.project-description ul,.collaboration-description ul.project-info ul{
-  list-style-position: inside;
-  list-style: none;
-  padding-left: 0;
-  text-indent: -15px;
-  margin-left: 20px;
-}
-
-.education-info h3 {
-  width: 45px;
-}
-
-.project-description li,.collaboration-description li {
-  margin-bottom: 0.5rem;
-}
-
-.project-entry:not(:first-child),.collaboration-entry:not(:first-child) {
-  margin-top: 1rem;
-}
-
-.education-logo img {
-  width: 45px ;
-  height:45px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-  background-color: #ca1b1b;
+.co-curricular-details p:first-child {
+  color:#333;
 }
 
 .co-curricular-entry {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 2rem;
-  background: #ffffff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items:flex-start;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 4px 8px rgba(0,0,0,.1);
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-bottom:2rem;
+  padding:1rem;
 }
 
-.skills-image img {
-  margin-bottom: 1rem;
+.co-curricular-entry,.education-entry {
+  align-items:flex-start;
+  background-color:#fff;
+  border-bottom:1px solid #eaeaea;
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:1rem;
+  padding:1rem;
+}
+
+.co-curricular-entry:nth-of-type(1) .co-curricular-period {
+  bottom:85px;
+}
+
+.co-curricular-entry:nth-of-type(1) .co-curricular-period,.co-curricular-entry:nth-of-type(2) .co-curricular-period {
+  bottom:2px;
 }
 
 .co-curricular-image img {
-  width: 79px;
-  height: 50px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
+  border-radius:4px;
+  height:50px;
+  margin-bottom:1rem;
+  margin-right:1rem;
+  width:79px;
 }
 
-.co-curricular-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: calc(100% - 70px);
+.co-curricular-logo img,.education-logo img {
+  margin-right:1rem;
+  width:64px;
 }
 
-.co-curricular-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.skills-image img {
+  border-radius:4px;
+  position: left;
+  width: 100%;
 }
 
 .co-curricular-period {
-  font-style: italic;
-  color: #ffffff;
-  margin-bottom: 1rem;
+  align-self:top;
+  bottom:3px;
+  color:#000;
+  font-style:italic;
+  font-weight:700;
+  margin-bottom:1rem;
+  margin-right:20px;
+  position:relative;
+  white-space:nowrap;
+}
+
+.co-curricular-period,.education-period {
+  color:#000;
+  display:block;
+  font-size:1rem;
+  font-weight:700;
+  margin-top:10px;
+  text-align:right;
+  white-space:nowrap;
+}
+
+.co-curricular-section,.education-section {
+  margin:2rem auto;
+}
+
+.collaboration-description ul.project-info ul,.project-description ul {
+  list-style:none;
+  list-style-position:inside;
+  margin-left:20px;
+  padding-left:0;
+  text-indent:-15px;
+}
+
+.collaboration-description,.collaboration-period,.collaboration-role,.project-description,.project-period,.project-role,.collaboration-description li,.project-description li,.experience-details .description li {
+  margin-bottom:.5rem;
+}
+
+.collaboration-details,.project-details,.co-curricular-details,.University-details {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:calc(100%-70px);
+}
+
+.collaboration-entry,.project-entry,.University-entry {
+  align-items:flex-start;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 4px 8px rgba(0,0,0,.1);
+  display:flex;
+  flex-direction:row;
+  margin-bottom:2rem;
+  padding:1rem;
+}
+
+.collaboration-entry:not(:first-child),.project-entry:not(:first-child),.project-entry:not(:first-child),.skills-entry:not(:first-child),.co-curricular-entry:not(:first-child),.collaboration-entry:not(:first-child),.cv-entry:not(:first-child) {
+  margin-top:1rem;
+}
+
+.collaboration-info,.project-info,.co-curricular-info,.University-info {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.collaboration-logo img,.project-logo img,.University-logo img {
+  border-radius:4px;
+  height:auto;
+  margin-bottom:1rem;
+  margin-right:1rem;
+  width:50px;
+}
+
+.content-container {
+  background-color:#fff;
+  color:#000;
+  font-family:Geneva,Tahoma,sans-serif;
+  margin:0 auto;
+  max-width:68%;
+  padding:2rem 1% 5rem;
+  width:68%;
+}
+
+.cv-section {
+  padding:4rem 0;
+  text-align:center;
+}
+
+.cv-section h2 {
+  font-size:2rem;
+  margin-bottom:1rem;
+  text-align:center;
+}
+
+.cv-section p {
+  font-size:1rem;
+  margin-bottom:2rem;
+}
+
+.cv-section button {
+  margin-bottom: 5rem;
 }
 
 .education-info h3 {
-  display: inline;
+  display:inline;
+  width:45px;
 }
 
 .education-info p {
   margin-bottom:2rem;
 }
 
-.University-entry {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 2rem;
-  background: #ffffff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.education-logo img {
+  background-color:#ca1b1b;
+  border-radius:4px;
+  height:45px;
+  margin-bottom:1rem;
+  margin-right:1rem;
+  width:45px;
 }
 
-.University-logo img {
-  width: 50px;
-  height: auto;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-}
-
-.University-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: calc(100% - 70px);
-}
-
-.University-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.University-qualification {
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-entry:not(:first-child) {
-  margin-top: 1rem;
-}
-
-.skills-entry:not(:first-child) {
-  margin-top: 1rem;
-}
-
-.co-curricular-entry:not(:first-child) {
-  margin-top: 1rem;
-}
-
-.collaboration-entry:not(:first-child) {
-  margin-top: 1rem;
-}
-
-.education-entry:not(:first-child) {
-  margin-top: 1rem;
-}
-
-.cv-entry:not(:first-child) {
-  margin-top: 1rem;
-}
-
-.content-container {
-  padding-bottom: 5rem;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3rem;
-  background-color: #333;
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
-}
-
-@media (max-width: 600px) {
-  .project-entry,.collaboration-entry {
-      flex-direction: column;
-      margin-top: 1rem;
-  }
-  .project-logo img,.collaboration-logo img {
-      margin: 0 auto;
-      margin-bottom: 1rem;
-  }
-  .project-info,.collaboration-info,.project-period,.project-role,.collaboration-period,.collaboration-role {
-      text-align: center;
-  }
-  .co-curricular-entry,.University-entry {
-      flex-direction: column;
-  }
-  .co-curricular-image img,.University-logo img {
-      margin: 0 auto;
-      margin-bottom: 1rem;
-  }
-  .co-curricular-info,.University-info {
-      text-align: center;
-  }
-}
-
-.experience-section h2 {
-  text-align: left;
-  color: #000000;
-  font-weight: bolder;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.experience-entry {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.experience-logo {
-  flex: 0 0 50px;
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
-  background-color: black;
-  border-radius: 4px;
+.education-qualification {
+  color:#000;
+  display:block;
+  font-size:.9rem;
+  margin-top:0;
 }
 
 .experience-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.experience-details h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.experience-details .role {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 0.5rem;
+  display:flex;
+  flex-direction:column;
 }
 
 .experience-details .description {
-  list-style: none;
-  padding: 0;
-  margin-top: 0.5rem;
+  list-style:none;
+  margin-top:.5rem;
+  padding:0;
 }
 
-.experience-details .description li {
-  margin-bottom: 0.5rem;
+.experience-details .role {
+  color:#333;
+  font-weight:700;
+  margin-bottom:.5rem;
+}
+
+.experience-details h3 {
+  font-size:1.2rem;
+  margin-bottom:.5rem;
+}
+
+.experience-entry {
+  align-items:flex-start;
+  display:flex;
+  margin-bottom:2rem;
+}
+
+.experience-logo {
+  background-color:#000;
+  border-radius:4px;
+  flex:0 0 50px;
+  height:50px;
+  margin-right:1rem;
+  width:50px;
+}
+
+.experience-section h2 {
+  color:#000;
+  font-size:1.5rem;
+  font-weight:bolder;
+  margin-bottom:1rem;
+  text-align:center;
+}
+
+.footer {
+  background-color:#333;
+  bottom:0;
+  color:#fff;
+  height:3rem;
+  left:0;
+  padding:1rem;
+  position:absolute;
+  text-align:center;
+  width:100%;
+}
+
+.location {
+  color:#666;
+  font-style:italic;
+  white-space:nowrap;
+}
+
+.location,.period {
+  color:#666;
+  font-size:1rem;
+  font-weight:400;
+  letter-spacing:.2px;
 }
 
 .period {
-  font-style: italic;
-  color: #666;
-  margin-top: 0.5rem;
+  color:#666;
+  font-style:italic;
+  margin-top:.5rem;
+}
+
+h2 {
+  color:#000;
+  font-size:1.3rem;
+  font-weight:bolder;
+  margin-bottom:2rem;
+  text-align:center;
 }
 
 @media (max-width: 600px) {
-  .experience-section h2 {
-      text-align: center;
+  .University-entry,.co-curricular-entry {
+    flex-direction:column;
   }
+
+  .collaboration-entry,.project-entry {
+    flex-direction:column;
+    margin-top:1rem;
+  }
+
+  .collaboration-logo img,.project-logo img,.University-logo img,.co-curricular-image img {
+    margin:0 auto 1rem;
+  }
+
   .experience-entry {
-      flex-direction: column;
-      align-items: center;
+    align-items:center;
+    flex-direction:column;
   }
+
   .experience-logo {
-      margin-bottom: 1rem;
+    margin-bottom:1rem;
   }
-  .period {
-      text-align: center;
+
+  .experience-section h2,.period,.collaboration-info,.collaboration-period,.collaboration-role,.project-info,.project-period,.project-role,.University-info,.co-curricular-info {
+    text-align:center;
   }
-}
-
-.cv-section {
-  text-align: center;
-  padding: 4rem 0;
-}
-
-.cv-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.cv-section p {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-}
-
-.button-54 {
-  font-size: 1.25rem;
-  padding: 0.75rem 1.5rem;
-  display: inline-block;
-  margin: 0;
-  margin-bottom: 2em;
 }
