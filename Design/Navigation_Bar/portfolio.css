@@ -1,66 +1,103 @@
 * {
-box-sizing:border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html, body {
+height: 100%;
+margin: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+main {
+flex: 1;
+padding: 1rem;
+}
+
+footer {
+background-color: #000000;
+color: #fff;
+text-align: center;
+padding: 1rem;
 }
 
 .content-container {
 background-color:#fff;
 color:#000;
-font-family:Geneva,Tahoma,sans-serif;
+font-family: sans-serif;
 max-width:68%;
 width:68%;
 margin:0 auto;
-padding:2rem 1% 5rem;
 }
 
 .footer {
-background-color:#333;
+background-color:#000000;
 bottom:0;
 color:#fff;
 height:3rem;
 left:0;
-position:absolute;
 text-align:center;
 width:100%;
 padding:1rem;
 }
 
 .portfolio-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .grid-item {
-position: relative;
-background-size: cover;
-background-position: center;
-height: 200px;
-border-radius: 8px;
-overflow: hidden;
-transition: transform 0.3s ease-in-out;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    will-change: transform, box-shadow;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.grid-item .content {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-top: 0;
-color: white;
-padding: 20px;
-display: none;
-flex-direction: column;
-text-align: center;
-justify-content: center;
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
-.grid-item:hover .content{
-background:#000000c5; 
-display: flex;
-transition: background 0.3s ease-in-out;
-pointer;
+.grid-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    transition: background 0.3s ease-out;
+    text-decoration: none;
+    color: white;
 }
 
-.btn {
-color: aqua;
+.grid-item a h4 {
+    transition: transform 0.3s ease-out;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.grid-item:hover a {
+    background: rgba(0,0,0,0.7);
+}
+
+.grid-item:hover a h4 {
+    transform: translateY(0);
+    opacity: 1;
 }
