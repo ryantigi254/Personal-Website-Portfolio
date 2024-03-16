@@ -1,39 +1,66 @@
 * {
-    box-sizing:border-box;
-    }
-    
-    .content-container {
-    background-color:#fff;
-    color:#000;
-    font-family:Geneva,Tahoma,sans-serif;
-    max-width:68%;
-    width:68%;
-    margin:0 auto;
-    padding:2rem 1% 5rem;
-    }
-    
-    .footer {
-    background-color:#333;
-    top: 100%;
-    color:#fff;
-    height:3rem;
-    left:0;
-    position:absolute;
-    text-align:center;
-    width:100%;
-    padding:1rem;
-    }
-    
-    img {
-        width: 12%;
-        border-radius: 5px;
-    }
+box-sizing:border-box;
+}
 
 .content-container {
-  background-color: #fff;
-  color: #ffffff;
-  font-family: Geneva, Tahoma, sans-serif;
-  max-width: 68%;
-  width: 68%;
-  margin: 0 auto;
+background-color:#fff;
+color:#000;
+font-family:Geneva,Tahoma,sans-serif;
+max-width:68%;
+width:68%;
+margin:0 auto;
+padding:2rem 1% 5rem;
+}
+
+.footer {
+background-color:#333;
+bottom:0;
+color:#fff;
+height:3rem;
+left:0;
+position:absolute;
+text-align:center;
+width:100%;
+padding:1rem;
+}
+
+.portfolio-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+
+.grid-item {
+position: relative;
+background-size: cover;
+background-position: center;
+height: 200px;
+border-radius: 8px;
+overflow: hidden;
+transition: transform 0.3s ease-in-out;
+}
+
+.grid-item .content {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+top: 0;
+color: white;
+padding: 20px;
+display: none;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+}
+
+.grid-item:hover .content{
+background:#000000c5; 
+display: flex;
+transition: background 0.3s ease-in-out;
+pointer;
+}
+
+.btn {
+color: aqua;
 }
