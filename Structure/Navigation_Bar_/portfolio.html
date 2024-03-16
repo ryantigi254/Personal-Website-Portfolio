@@ -11,23 +11,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/Structure/Assets/brain/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/Structure/Assets/brain/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/Structure/Assets/brain/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/Structure/Assets/brain/android-chrome-512x512.png">es="192x192" href="/Structure/Assets/favicon_io_3/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/Structure/Assets/brain/android-chrome-512x512.png">
     <!-- Added multiple sizes of favicon as I did notice a discrepancy of sizes since I was using my laptopo and a monitor -->
     <link rel="stylesheet" href="/Design/Main_Design/main.css"> <!--//# link the main css file -->
     <link rel="stylesheet" href="/Design/Main_Design/mobile.css">
     <link rel="stylesheet" href="/Design/Main_Design/desktop.css">
-    <link rel="stylesheet" href="/Design/Navigation_Bar/about.css">
+    <link rel="stylesheet" href="/Design/Navigation_Bar/portfolio.css">
     <script src="/Automation/Main_Automation/main.js" defer></script>
     <script src="https://kit.fontawesome.com/c4e363c4e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- This is the main page and will have the basic strucutre that one should expect all through in all other pages -->
-    <!--//# Note-> I will structure the code slightly similar to my folder and file arrangement, this will allow me to easily remember where different peieces of code/assets are-->
-    <!-- I also have a domain under my name purchased so once complete I will formally put it under that domain priority not too high-->
+
     <header class="box">
     </header>
-    <nav> <!--//# Came up with a navbar to hold all the links to other pages of my website-->
+    <nav> 
         <div class="web-pages-list" id="outnav">
             <ul class="home-button">
                 <li>                <a href="/Structure/index.html">
@@ -39,7 +37,7 @@
                 <ul  id="innav">
                     <li><a href="/Structure/Navigation_Bar_/about.html" class="innav-text" target="_blank">ABOUT</a></li>
                     <li><a href="#" class="innav-text">PORTFOLIO</a></li>
-                    <li><a href="/Structure/Navigation_Bar_/blog.html" class="innav-text" target="_blank">BLOG</a></li>
+                    <li><a href="https://uonai.blog/2024/01/16/ai-for-independent-learning-a-glimpse-into-our-research/" class="innav-text" target="_blank">BLOG</a></li>
                     <li><a href="/Structure/Navigation_Bar_/contact.html" class="innav-text" target="_blank">CONTACT</a></li>
                     <li class="more-dropdown-list"> 
                         <a class="dropdown-toggle">MORE</a>
@@ -68,11 +66,93 @@
         </div>
     </nav>
     <main>
+        <!-- inspiration from "https://johnpham.co.uk/"  -->
         <div class="content-container">
-            
+            <section id="portfolio">
+                <div class="portfolio-container">
+                  <h2>My Portfolio</h2>
+                  <p>Brief introduction about your projects and experience...</p>
+                  <div class="portfolio-out-group">
+                    <!-- SQL Project Card -->
+                    <div class="SQL">
+                      <div class="portfolio-in-group">
+                        <img src="/Structure/Assets/SQL/android-chrome-512x512.png" alt="SQL Project">
+                        <div class="portfolio-body">
+                          <h3 class="portfolio-title">SQL Database Project</h3>
+                          <p class="portfolio-text">Description of your SQL project...</p>
+                          <a href="https://github.com/ryantigi254/WalmartSalesForecastingCompetition." class="portfolio-links">View on GitHub</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Pandas Project Card -->
+                    <div class="Pandas">
+                        <div class="portfolio-in-group">
+                          <img src="/Structure/Assets/Pandas/android-chrome-512x512.png" alt="Pandas Project">
+                          <div class="portfolio-body">
+                            <h3 class="portfolio-title">Pandas Project</h3>
+                            <p class="portfolio-text">Description of your Pandas project...</p>
+                            <a href="https://github.com/ryantigi254/Kaggle-Starbucks-Locations-Worldwide-2021-Analysis" class="portfolio-links">View on GitHub</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    <!-- NumPy Project Card -->
+                    <div class="NumPy">
+                        <div class="portfolio-in-group">
+                          <img src="/Structure/Assets/Numpy/android-chrome-512x512.png" alt="NumPy Project">
+                          <div class="portfolio-body">
+                            <h3 class="portfolio-title">NumPy Project</h3>
+                            <p class="portfolio-text">Description of your NumPy project...</p>
+                            <a href="https://github.com/ryantigi254/Kaggle-Starbucks-Locations-Worldwide-2021-Analysis" class="portfolio-links">View on GitHub</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- Urban Project Card -->
+                    <div class="Urban">
+                    <div class="portfolio-in-group">
+                        <img src="/Structure/Assets//urban/android-chrome-512x512.png" alt="Urban Project">
+                        <div class="portfolio-body">
+                        <h3 class="portfolio-title">Urban Project</h3>
+                        <p class="portfolio-text">Description of your Urban project...</p>
+                        <a href="github-link" class="portfolio-links">View on GitHub</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Innovation-Fund Project Card -->
+                    <div class="Innovation-Fund">
+                        <div class="portfolio-in-group">
+                            <img src="/Structure/Assets/uon%20icon/android-chrome-512x512.png" alt="Innovation-Fund Project">
+                            <div class="portfolio-body">
+                            <h3 class="portfolio-title">Innovation-Fund Project</h3>
+                            <p class="portfolio-text">Description of your Innovation-Fund project...</p>
+                            <a href="https://www.northampton.ac.uk/research/research-and-innovation-support/" class="portfolio-links">View Project</a>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    <!-- IEEE Project Card -->
+                    <div class="IEEE">
+                        <div class="portfolio-in-group">
+                            <img src="/Structure/Assets/IEEE/android-chrome-512x512.png" alt="IEEE Project">
+                            <div class="portfolio-body">
+                            <h3 class="portfolio-title">IEEE Project</h3>
+                            <p class="portfolio-text">Description of your IEEE project...</p>
+                            <a href="https://cityrobotics.co.uk/" class="portfolio-links">View </a>
+                            </div>
+                        </div>
+                        </div>
+      
+                  </div>
+
+
+                </div>
+              </section> 
         </div>
     </main>
-    <footer class="footer-container"> <!--//# Basic footer seen on most websites-->
+    <footer class="footer-container"> 
 
         <div>
             <ul class="footer-socials" id="footer-social-links">

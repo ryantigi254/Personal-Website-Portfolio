@@ -1,0 +1,39 @@
+* {
+    box-sizing:border-box;
+    }
+    
+    .content-container {
+    background-color:#fff;
+    color:#000;
+    font-family:Geneva,Tahoma,sans-serif;
+    max-width:68%;
+    width:68%;
+    margin:0 auto;
+    padding:2rem 1% 5rem;
+    }
+    
+    .footer {
+    background-color:#333;
+    top: 100%;
+    color:#fff;
+    height:3rem;
+    left:0;
+    position:absolute;
+    text-align:center;
+    width:100%;
+    padding:1rem;
+    }
+    
+    img {
+        width: 12%;
+        border-radius: 5px;
+    }
+
+.content-container {
+  background-color: #fff;
+  color: #ffffff;
+  font-family: Geneva, Tahoma, sans-serif;
+  max-width: 68%;
+  width: 68%;
+  margin: 0 auto;
+}
