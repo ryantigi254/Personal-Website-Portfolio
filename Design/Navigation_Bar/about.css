@@ -38,8 +38,22 @@
   color: #000;
   }
   
-  
-  
+
+
+#break-1, #break-2, #break-3, #break-4{
+  border: #000000 1px solid;
+
+}
+
+#break-2{
+  margin-top: 1rem;
+
+}
+
+#break-1,  #break-4{
+  margin-bottom: 1rem ;
+}
+
   .education-details p:not(:first-child)::before, .co-curricular-details p:not(:first-child)::before {
   content: '• ';
   font-size: 1em; 
