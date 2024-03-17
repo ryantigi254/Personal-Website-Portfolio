@@ -12,10 +12,10 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/Structure/Assets/brain/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/Structure/Assets/brain/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/Structure/Assets/brain/android-chrome-512x512.png">
-    <!-- Added multiple sizes of favicon as I did notice a discrepancy of sizes since I was using my laptopo and a monitor -->
-    <link rel="stylesheet" href="/Design/Main_Design/main.css"> <!--//# link the main css file -->
+    <!-- Added multiple sizes of favicon as I did notice a discrepancy of sizes since I was using my laptopo and a monitor --> <!--//# link the main css file -->
     <link rel="stylesheet" href="/Design/Main_Design/mobile.css">
     <link rel="stylesheet" href="/Design/Main_Design/desktop.css">
+    <link rel="stylesheet" href="/Design/Main_Design/main.css">
     <script src="/Automation/Main_Automation/main.js" defer></script>
     <script src="https://kit.fontawesome.com/c4e363c4e7.js" crossorigin="anonymous"></script>
 </head>
@@ -36,9 +36,9 @@
             </ul>
             <div class="web-pages-list">
                 <ul  id="innav">
-                    <li><a href="Navigation_Bar_/about.html" class="innav-text">ABOUT</a></li>
-                    <li><a href="Navigation_Bar_/portfolio.html" class="innav-text">PORTFOLIO</a></li>
-                    <li><a href="Navigation_Bar_/blog.html" class="innav-text">BLOG</a></li>
+                    <li><a href="Navigation_Bar_/about.html" class="innav-text" >ABOUT</a></li>
+                    <li><a href="Navigation_Bar_/portfolio.html" class="innav-text" >PORTFOLIO</a></li>
+                    <li><a href="Navigation_Bar_/blog.html" class="innav-text" >BLOG</a></li>
                     <li><a href="Navigation_Bar_/contact.html" class="innav-text">CONTACT</a></li>
                     <li class="more-dropdown-list"> 
                         <div id="MORE"><a class="dropdown-toggle">MORE</a></div>
@@ -67,9 +67,36 @@
         </div>
     </nav>
     <main>
+        <!-- In future I'm looking to have a feature such as these where someone can view and access information about collaborations I have had in the past or currently have (https://pure.northampton.ac.uk/en/persons/mu-mu/https://pure.northampton.ac.uk/en/persons/james-xue/network/) -->
+        <div class="grid-container">
         <div class="content-container">
-            
+                        <!-- Design like this will be made in future https://www.yan-holtz.com/
+                        similar to one seen on stack overflow website https://insights.stackoverflow.com/survey
+                    inspiration as well is https://learn-anything.xyz/-->
+ 
+            <div class="logo-container">
+                <img src="/Structure/Assets/brain/android-chrome-512x512.png" alt="Ryan Gichuru Logo" id="logo">
+                <h1>Ryan Gichuru</h1>
+            </div>
+
+
+            <section class="author-info">
+                <div class="author-content">
+                    <h2>Welcome to Ryan Gichuru's homepage.</h2>
+                    <p>I'm an Artificial and Data Science student currently working as a Research Assistant.</p>
+                    <button class="explore-button" onclick="location.href='Navigation_Bar_/about.html'" type="button">
+                        Explore
+                    </button>
+                </div>
+                <div class="author-image">
+                    <img src="/Structure/Assets/author images/222078289_838845790087610_5959651496625690204_n - Copy.jpg" alt="Author Image" id="authorimg">
+                </div>
+            </section>
+
+
+
         </div>
+    </div>
     </main>
     <footer class="footer-container"> <!--//# Basic footer seen on most websites-->
 
