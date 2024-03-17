@@ -198,7 +198,7 @@ body {
       "nav"
       "main"
       "footer";
-  grid-template-rows: auto 1fr auto auto; /* Adjust based on your content */
+  grid-template-rows: auto 1fr auto auto;
 }
 
 header.box {
