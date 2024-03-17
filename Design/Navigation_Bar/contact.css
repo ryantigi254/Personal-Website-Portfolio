@@ -189,3 +189,30 @@ This feature was a test for a button to change from lighht to dark mode. It was 
       justify-self:stretch;
     }
   }
+
+  
+body {
+  display: grid;
+  grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "footer";
+  grid-template-rows: auto 1fr auto auto; /* Adjust based on your content */
+}
+
+header.box {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer.footer-container {
+  grid-area: footer;
+}
