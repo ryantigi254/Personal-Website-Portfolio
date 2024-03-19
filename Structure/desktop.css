@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "top-border top-border top-border top-border"
+    "aside header nav aside"
+    "aside main main aside"
+    "footer footer footer footer";
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+}
+
+
+.top-border{
+    grid-area: top-border;
+    display: flex;
+}
+
+header{
+    grid-area: header;
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+nav{
+    grid-area: nav;
+}
+
+aside{
+    grid-area: aside;
+
+}
+
+footer{
+    grid-area: footer;
+}
+main{
+    grid-area: main;
+}
+
+.main_navigation a{
+
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
