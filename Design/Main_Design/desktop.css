@@ -6,6 +6,11 @@ flex-grow:1;
 transform:translateX(200px);
 }
 
+.hamburger-menu {
+display:none;
+
+}
+
 #innav .more-dropdown-list {
 position:relative;
 }
@@ -212,6 +217,8 @@ color:#7e7e7e;
 padding:1rem;
 }
 
+
+
 footer .footer-container .copyright-info div,footer .footer-container .country-location p {
 font-size:.8rem;
 }
@@ -279,3 +286,5 @@ position:static;
 transform:none;
 }
 }
+
+

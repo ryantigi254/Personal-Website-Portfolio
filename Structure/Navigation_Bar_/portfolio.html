@@ -14,9 +14,9 @@
     <link rel="icon" type="image/png" sizes="512x512" href="/Structure/Assets/brain/android-chrome-512x512.png">
     <!-- Added multiple sizes of favicon as I did notice a discrepancy of sizes since I was using my laptopo and a monitor -->
     <link rel="stylesheet" href="/Design/Main_Design/main.css"> <!--//# link the main css file -->
-    <link rel="stylesheet" href="/Design/Main_Design/mobile.css">
     <link rel="stylesheet" href="/Design/Main_Design/desktop.css">
     <link rel="stylesheet" href="/Design/Navigation_Bar/portfolio.css">
+    <link rel="stylesheet" href="/Design/Main_Design/mobile.css">
     <script src="/Automation/Main_Automation/main.js" defer></script>
     <script src="https://kit.fontawesome.com/c4e363c4e7.js" crossorigin="anonymous"></script>
 </head>
@@ -35,16 +35,16 @@
             </ul>
             <div class="web-pages-list">
                 <ul  id="innav">
-                    <li><a href="/Structure/Navigation_Bar_/about.html" class="innav-text" target="_blank">ABOUT</a></li>
+                    <li><a href="/Structure/Navigation_Bar_/about.html" class="innav-text" >ABOUT</a></li>
                     <li><a href="#" class="innav-text">PORTFOLIO</a></li>
-                    <li><a href="https://uonai.blog/2024/01/16/ai-for-independent-learning-a-glimpse-into-our-research/" class="innav-text" target="_blank">BLOG</a></li>
-                    <li><a href="/Structure/Navigation_Bar_/contact.html" class="innav-text" target="_blank">CONTACT</a></li>
+                    <li><a href="https://uonai.blog/2024/01/16/ai-for-independent-learning-a-glimpse-into-our-research/" class="innav-text" >BLOG</a></li>
+                    <li><a href="/Structure/Navigation_Bar_/contact.html" class="innav-text">CONTACT</a></li>
                     <li class="more-dropdown-list"> 
                         <a class="dropdown-toggle">MORE</a>
                         <!--//# I enclosed these pages here because I will later remove them as I improve my website and make it more industry standard-->
                         <div class="dropdown-content">
-                            <a href="/Structure/Navigation_Bar_/More/videoDemo.html" target="_blank">VIDEO DEMO</a>
-                            <a href="/Structure/Navigation_Bar_/More/sitereport.html" target="_blank">SITE REPORT</a>
+                            <a href="https://www.loom.com/share/0da535db4aff45da91a2db58ac4e66ae?sid=c2a2ec26-7fd6-41da-b1ba-f6bf2c683717">VIDEO DEMO</a>
+                            <a href="/Structure/Navigation_Bar_/More/sitereport.html" >SITE REPORT</a>
                         </div>
                     </li>
                 </ul>
@@ -66,10 +66,83 @@
         </div>
     </nav>
     <main>
-        
-        <div class="content-container">
-        <!-- removed it for now to place the code in another branch as it is another page -->
-        </div>
+
+            <!-- inspiration from "https://johnpham.co.uk/"  -->
+            <div class="content-container">
+                <section id="portfolio">
+                    <h2>My Portfolio</h2>
+                    <p>Brief introduction.</p>
+                    <div class="portfolio-grid">
+
+                        <!-- Pacman Project Card -->
+                        <div class="grid-item" style="background-image: url('/Structure/Assets/pacman/android-chrome-512x512.png ');">
+                            <a href="https://github.com/ryantigi254" class="portfolio-link">
+                                <div class="portfolio-overlay">
+                                    <h4>Pacman</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- SQL Project Card -->
+                        <div class="grid-item" style="background-image: url('/Structure/Assets/SQL/android-chrome-512x512.png');">
+                            <a href="https://github.com/ryantigi254/WalmartSalesForecastingCompetition" class="portfolio-link">
+                                <div class="portfolio-overlay">
+                                    <h4>Walmart Sales Analysis</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Pandas Project Card -->
+                        <div class="grid-item" style="background-image: url('/Structure/Assets/Pandas/android-chrome-512x512.png');">
+                            <a href="https://github.com/ryantigi254/Kaggle-Starbucks-Locations-Worldwide-2021-Analysis" class="portfolio-link">
+                                <div class="portfolio-overlay">
+                                    <h4>Starbucks Locations Analysis</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- NumPy Project Card -->
+                        <div class="grid-item" style="background-image: url('/Structure/Assets/Numpy/android-chrome-512x512.png');">
+                            <a href="https://github.com/ryantigi254/Kaggle-Starbucks-Locations-Worldwide-2021-Analysis" class="portfolio-link">
+                                <div class="portfolio-overlay">
+                                    <h4>Starbucks Locations Analysis</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Urban Project Card -->
+                        <div class="grid-item" style="background-image: url('/Structure/Assets/urban/android-chrome-512x512.png');">
+                            <a href="github-link" class="portfolio-link">
+                                <div class="portfolio-overlay">
+                                    <h4>Urban</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Innovation-Fund Project Card -->
+                        <div class="grid-item" style="background-image: url('/Structure/Assets/uon%20icon/android-chrome-512x512.png');">
+                            <a href="https://www.northampton.ac.uk/research/research-and-innovation-support/" class="portfolio-link">
+                                <div class="portfolio-overlay">
+                                    <h4>Innovation-Fund</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- IEEE Project Card -->
+                        <div class="grid-item" style="background-image: url('/Structure/Assets/IEEE/android-chrome-512x512.png');">
+                            <a href="https://cityrobotics.co.uk/" class="portfolio-link">
+                                <div class="portfolio-overlay">
+                                    <h4>Robotics Project</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                       
+                            
+                    </div>
+                </section> 
+            </div>
+    
     </main>
     <footer class="footer-container"> 
 

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle the dropdown on click
     moreToggle.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent the default anchor link behavior
-        event.stopPropagation(); // Prevent click from being immediately propagated to the window
+        event.stopPropagation(); 
         dropdownContent.classList.toggle('active');
     });
 
@@ -17,3 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
+});
+

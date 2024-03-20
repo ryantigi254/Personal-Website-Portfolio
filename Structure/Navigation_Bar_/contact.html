@@ -14,11 +14,10 @@
     <link rel="icon" type="image/png" sizes="512x512" href="/Structure/Assets/brain/android-chrome-512x512.png">
     <!-- Added multiple sizes of favicon as I did notice a discrepancy of sizes since I was using my laptopo and a monitor -->
     <link rel="stylesheet" href="/Design/Main_Design/main.css"> <!--//# link the main css file -->
-    <link rel="stylesheet" href="/Design/Main_Design/mobile.css">
     <link rel="stylesheet" href="/Design/Main_Design/desktop.css">
     <link rel="stylesheet" href="/Design/Navigation_Bar/contact.css">
+    <link rel="stylesheet" href="/Design/Main_Design/mobile.css">
     <script src="/Automation/Main_Automation/main.js" defer></script>
-    <script src="/Automation/Navigation_Bar/contact.js" defer></script>
     <script src="https://kit.fontawesome.com/c4e363c4e7.js" crossorigin="anonymous"></script>
 </head>
 
@@ -35,15 +34,15 @@
             </ul>
             <div class="web-pages-list">
                 <ul  id="innav">
-                    <li><a href="/Structure/Navigation_Bar_/about.html" class="innav-text" target="_blank">ABOUT</a></li>
-                    <li><a href="/Structure/Navigation_Bar_/portfolio.html" class="innav-text" target="_blank">PORTFOLIO</a></li>
-                    <li><a href="https://uonai.blog/2024/01/16/ai-for-independent-learning-a-glimpse-into-our-research/" class="innav-text" target="_blank">BLOG</a></li>
+                    <li><a href="/Structure/Navigation_Bar_/about.html" class="innav-text">ABOUT</a></li>
+                    <li><a href="/Structure/Navigation_Bar_/portfolio.html" class="innav-text" >PORTFOLIO</a></li>
+                    <li><a href="https://uonai.blog/2024/01/16/ai-for-independent-learning-a-glimpse-into-our-research/" class="innav-text" >BLOG</a></li>
                     <li><a href="#" class="innav-text">CONTACT</a></li>
                     <li class="more-dropdown-list"> 
                         <a class="dropdown-toggle">MORE</a>
                         <div class="dropdown-content">
-                            <a href="/Structure/Navigation_Bar_/More/videoDemo.html" target="_blank">VIDEO DEMO</a>
-                            <a href="/Structure/Navigation_Bar_/More/sitereport.html" target="_blank">SITE REPORT</a>
+                            <a href="https://www.loom.com/share/0da535db4aff45da91a2db58ac4e66ae?sid=ece48feb-4463-426c-83ba-6cb41b46511c">VIDEO DEMO</a>
+                            <a href="/Structure/Navigation_Bar_/More/sitereport.html" >SITE REPORT</a>
                         </div>
                     </li>
                 </ul>
@@ -66,6 +65,61 @@
     </nav>
     <main>
         <div class="content-container">
+            <!-- <div class="theme-switch-wrapper">
+                This feature was a test for a button to change from lighht to dark mode. It was not implemented in the final version of the website. */
+
+               <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+                </label>
+              </div>  --> 
+
+              <div class="contact-form-container">
+                <form class="contact-form" action="https://formspree.io/f/xkndvono" method="post">
+
+                    <!-- I was working wiuth my friend who chose to implement PHP to manage his form submission. I chose to go with this mehtod as iot is the easiest and with time can be improved on -->
+                    <div class="form-header">
+                    <h2>Let's Talk</h2>
+                    <p>Have a project you'd like to discuss, or just wish to get in touch for any other reason? Fill in the form on this page. </p>
+                    <hr>
+                    <div class="contact-info">
+                        <p>+44 (0) 7923 843 842</p>
+                        <p>ryantigi2020@gmail.com</p>
+                        <div class="social-links">
+                        <!-- Social media links here -->
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-fields">
+                    <div class="form-row">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                    <button type="submit">SUBMIT</button>
+                    </div>
+                </div>
+                </form>
+            </form>
+                </div>
+        </div> 
             
         </div>
                 
